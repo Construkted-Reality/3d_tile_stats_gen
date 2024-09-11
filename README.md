@@ -18,6 +18,8 @@ Below the summary is the data for each tile.
 
 In the summary, the `tile_id` column is actually the number of tiles in that LOD level. (need to fix the header title)
 
-Blender needs to be installed as the pythoin script uses it for the heavy lifting of computation.
+### Usage
 
-**Usage**: blender --background --python script.py -- <path_to_tileset.json> <output_csv_filename>
+`blender --background --python script.py -- <path_to_tileset.json> <output_csv_filename>`
+
+Blender needs to be installed as the pythoin script uses it for the heavy lifting of texture and mesh computation.
