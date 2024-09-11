@@ -1,7 +1,6 @@
-# 3d_tile_stats_gen
-3d tile statistics generator
+# 3d Tile Statistics Generator
 
-This script parses all the mesh files in a 3d tileset, and generates some statistics about the mesh and texture.
+This script parses all the mesh files in an OGC 3d tileset, and generates some statistics about the mesh and texture.
 
 Blender needs to be installed as the pythoin script uses it for the heavy lifting of computation.
 
