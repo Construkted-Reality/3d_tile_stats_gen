@@ -19,9 +19,12 @@ Below the summary is the data for each tile.
 In the summary, the `tile_id` column is actually the number of tiles in that LOD level. (need to fix the header title)
 
 ### Before usage
-When dealing with v1.0 3d tiles, you will need to convert the b3dm files in the tileset to glb, and you'll have to replace all refereences of b3dm in the tileset.json files (and any other nested json files) to glb.
+When dealing with v1.0 3d tiles, **you will need to convert the b3dm files in the tileset to glb**, and you'll have to replace all refereences of b3dm in the tileset.json files (and any other nested json files) to glb.
 The script currently only works with glb files.
 
+To find and replace all instances of b3dm and replace it with glb, you can use this linux command. 
+
+`find . -type f -name "\*.json" -exec sed -i 's/.b3dm/.glb/g' {} +`
 
 ### Usage
 
