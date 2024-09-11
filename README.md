@@ -18,6 +18,11 @@ Below the summary is the data for each tile.
 
 In the summary, the `tile_id` column is actually the number of tiles in that LOD level. (need to fix the header title)
 
+### Before usage
+When dealing with v1.0 3d tiles, you will need to convert the b3dm files in the tileset to glb, and you'll have to replace all refereences of b3dm in the tileset.json files (and any other nested json files) to glb.
+The script currently only works with glb files.
+
+
 ### Usage
 
 `blender --background --python examine_3d-tile.py -- <path_to_tileset.json> <output_csv_filename>`
